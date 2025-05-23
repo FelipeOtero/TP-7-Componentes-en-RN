@@ -31,7 +31,7 @@ export default function App() {
           />
 
           <Text style={styles.nombre}>Goku</Text>
-          <Text style={styles.titulo}>Desarrollador Frontend</Text>
+          <Text style={styles.titulo}>Personaje de Dragon Ball</Text>
 
           <View style={styles.iconos}>
         <Image source={require('./assets/github.png')} style={styles.iconoImg} />
@@ -66,47 +66,45 @@ export default function App() {
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFBF5', 
   },
   background: {
     flex: 1,
-    backgroundColor: '#dfe6f0',
+    backgroundColor: '#E6E6FA', 
     justifyContent: 'center',
     alignItems: 'center',
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFFFF',
     padding: 24,
     borderRadius: 20,
     alignItems: 'center',
     width: 300,
     shadowColor: '#000',
-    shadowOpacity: 0.25,
+    shadowOpacity: 0.15,
     shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 8,
-    elevation: 8,
+    shadowRadius: 6,
+    elevation: 6,
   },
   avatar: {
     width: 100,
     height: 100,
-    borderRadius: 50,
+    borderRadius: 30,
     borderWidth: 3,
-    borderColor: '#cf8a2f',
-    marginBottom: 12,
+    borderColor: '#FF8000', 
+    marginBottom: 1,
   },
   nombre: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#1e1e3f',
+    color: '#4A635D', 
   },
   titulo: {
-    fontStyle: 'italic',
-    color: '#666',
-    marginBottom: 16,
+    color: '#black', 
+    marginBottom: 14,
   },
   iconos: {
     flexDirection: 'row',
@@ -117,41 +115,44 @@ const styles = StyleSheet.create({
   icono: {
     fontSize: 24,
     marginHorizontal: 5,
+    color: '#444444', 
   },
   btnPortfolio: {
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 8,
+    backgroundColor: '#black', 
     marginBottom: 16,
   },
   btnPortfolioText: {
-    color: 'white',
+    color: '#FFFFFF',
     fontWeight: 'bold',
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#B0B0B0',
     borderRadius: 8,
     paddingHorizontal: 10,
     paddingVertical: 8,
     width: '100%',
     marginBottom: 16,
-    color: '#333',
+    color: '#333333',
+    backgroundColor: '#FFFFFF',
   },
   btnContactar: {
-    backgroundColor: '#6a74c9',
+    backgroundColor: '#A7C7E7',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 10,
   },
   btnContactarText: {
-    color: '#fff',
+    color: '#2F3E46', 
     fontWeight: 'bold',
-  }, 
+  },
   iconoImg: {
     width: 24,
     height: 24,
     marginHorizontal: 6,
   },
-  
 });
+
